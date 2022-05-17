@@ -1,0 +1,6 @@
+framework module JXIMSdk {
+  umbrella header "JXIMSdk.h"
+
+  export *
+  module * { export * }
+}
