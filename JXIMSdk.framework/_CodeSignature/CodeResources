@@ -78,7 +78,7 @@
 		</data>
 		<key>Headers/JXIMMsgFaceContent.h</key>
 		<data>
-		TlR2wNLuOcMYhYYJV9OZEq1Sjls=
+		SFmqsdjRndq2XlQ6Gv2xTtHH/cA=
 		</data>
 		<key>Headers/JXIMMsgFileContent.h</key>
 		<data>
@@ -126,7 +126,11 @@
 		</data>
 		<key>Headers/JXIMSdk.h</key>
 		<data>
-		xYV8GREwbOBLf6LfWJm/0So5ZOA=
+		x3yccKFaQtbepAoBVamjoxxMF1o=
+		</data>
+		<key>Headers/JXIMSearch.h</key>
+		<data>
+		ytJukLrGEkhHNXZ9vyoVkj4J/hQ=
 		</data>
 		<key>Headers/JXIMSendMessage.h</key>
 		<data>
@@ -134,7 +138,7 @@
 		</data>
 		<key>Headers/JXIMService.h</key>
 		<data>
-		cAYZDwLTYuphBFXSAmKKuIiHdjo=
+		YxZk/KWJzYX8qCfuji4Hd0CW/8Y=
 		</data>
 		<key>Headers/JXSessionMessage.h</key>
 		<data>
@@ -361,11 +365,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TlR2wNLuOcMYhYYJV9OZEq1Sjls=
+			SFmqsdjRndq2XlQ6Gv2xTtHH/cA=
 			</data>
 			<key>hash2</key>
 			<data>
-			oGZA9AvkoCxqgNO17fP7mOPiYdui0eyOUQvpY57dqSY=
+			DuRu0GLcWjhdZftouseMD/f9PPP1FqbHIubYZYlxKEo=
 			</data>
 		</dict>
 		<key>Headers/JXIMMsgFileContent.h</key>
@@ -493,11 +497,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xYV8GREwbOBLf6LfWJm/0So5ZOA=
+			x3yccKFaQtbepAoBVamjoxxMF1o=
 			</data>
 			<key>hash2</key>
 			<data>
-			+loUiaNks7klU2bpRpzITejC53zdUaWgccBthgK+lAA=
+			6xRhlPz/TvqYCIW3V+USEYlB0i5gnkqDTFh19d/98BY=
+			</data>
+		</dict>
+		<key>Headers/JXIMSearch.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ytJukLrGEkhHNXZ9vyoVkj4J/hQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			w8jAgS6Fww9qRYEqHyVD92+YLV5v0vUZEgnXyKl/lYg=
 			</data>
 		</dict>
 		<key>Headers/JXIMSendMessage.h</key>
@@ -515,11 +530,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cAYZDwLTYuphBFXSAmKKuIiHdjo=
+			YxZk/KWJzYX8qCfuji4Hd0CW/8Y=
 			</data>
 			<key>hash2</key>
 			<data>
-			NELD5jgOcxx7M4mRJOr1XI4YGX4zRSwVSCSe5siZokA=
+			s7DKj1NjX0UZnRv0IkrWbMRUspzSOEjnTlaaVyyMmqE=
 			</data>
 		</dict>
 		<key>Headers/JXSessionMessage.h</key>

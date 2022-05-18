@@ -27,4 +27,5 @@ FOUNDATION_EXPORT const unsigned char JXIMSdkVersionString[];
 #import <JXIMSdk/JXIMMsgPubContent.h>
 #import <JXIMSdk/JXIMMsgPubSimpleContent.h>
 #import <JXIMSdk/JXIMError.h>
+#import <JXIMSdk/JXIMSearch.h>
 

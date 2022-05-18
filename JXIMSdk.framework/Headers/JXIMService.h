@@ -218,36 +218,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)groupMsgGet:(JXGroupMessageGet *)messageGet;
 
-/**
- * 全文检索
- * @param searchStr 搜索内容
- */
--(NSArray *)searchTextMsg:(NSString *)searchStr;
-
-/**
- * 搜索单个会话文本消息
- * @param searchStr 搜索内容
- * @param target 会话id
- */
--(NSArray *)searchTextMsgWithTarget:(NSString *)target searchStr:(NSString *)searchStr;
-
-/**
- * 搜索图片
- * @param target 会话id
- */
--(NSArray *)searchPicMsg:(NSString *)target;
-
-/**
- * 搜索所有文件
- */
--(NSArray *)searchAllFileMsg;
-
-/**
- * 搜索会话文件消息
- * @param target 会话id
- */
--(NSArray *)searchFileMsgWithTarget:(NSString *)target;
-
 @end
 
 NS_ASSUME_NONNULL_END
