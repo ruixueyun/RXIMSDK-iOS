@@ -47,7 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 发送消息
  * @param sendMessage 发送的消息对象
- * @param completionHandler 返回发送的消息对象是未发送成功对象，发送成功以delegate方式回调，处理本地逻辑用
+ * @param completionHandler 返回发送的消息对象，处理本地逻辑用，发送成功以delegate方式回调。
  */
 - (void)sendMessage:(RXIMSendMessage * _Nonnull)sendMessage
   completionHandler:(void (^)(RXIMMessage * message,RXIMError *error))completionHandler;
@@ -55,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 重发消息
  * @param message 发送的消息对象
- * @param completionHandler 返回发送的消息对象是未发送成功对象，发送成功以delegate方式回调，处理本地逻辑用
+ * @param completionHandler 返回发送的消息对象，处理本地逻辑用，发送成功以delegate方式回调。
  */
 - (void)resendMessage:(RXIMMessage * _Nonnull)message
   completionHandler:(void (^)(RXIMMessage * message,RXIMError *error))completionHandler;
@@ -63,7 +63,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 转发消息
  * @param mids 消息id数组
- * @param receives 对方id数组
+ * @param receives 会话id数组
  * @Param exts 扩展数组
  */
 - (void)forwardMessage:(NSArray * _Nonnull)mids
@@ -83,7 +83,7 @@ NS_ASSUME_NONNULL_BEGIN
              content:(NSString * _Nonnull)text
               target:(NSString * _Nonnull)target
          sessionType:(RXIMSessionType)sessionType
-                 ext:(NSDictionary<NSString *,NSString *> *)ext
+                 ext:(NSDictionary<NSString *,NSString *> * _Nullable)ext
    completionHandler:(void (^)(RXIMMessage * message,RXIMError *error))completionHandler;
 
 /**

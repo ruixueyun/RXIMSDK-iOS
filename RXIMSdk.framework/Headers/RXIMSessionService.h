@@ -142,13 +142,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)deleteLocalSingleConversation:(NSString * _Nonnull)covId
                         complete:(void(^)(RXIMError *error))complete;
 
-/**
- * 设置本地会话扩展字段
- * @param covId 会话id
- * @param ext 扩展字段 json字符串
- */
-- (BOOL)setLocalConversationExt:(NSString * _Nonnull)covId
-                  ext:(NSDictionary * _Nonnull)ext;
 
 @end
 

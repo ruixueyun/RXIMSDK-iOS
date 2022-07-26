@@ -78,11 +78,11 @@
 		</data>
 		<key>Headers/RXIMSessionService.h</key>
 		<data>
-		RUQw2ehH6/FcFskgWc9R/AfVmpc=
+		l2rr/oHOtPNx7AFH3avhU5EwztY=
 		</data>
 		<key>Headers/RXIMSingleService.h</key>
 		<data>
-		oRGERg2IYhwbhheEDSMQlyAxbuA=
+		5ORlAif9b6UT4AWt2bUYofJQs9s=
 		</data>
 		<key>Info.plist</key>
 		<data>
@@ -297,22 +297,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			RUQw2ehH6/FcFskgWc9R/AfVmpc=
+			l2rr/oHOtPNx7AFH3avhU5EwztY=
 			</data>
 			<key>hash2</key>
 			<data>
-			JSFDcGM+saAdUfsjak8Gral9FPoRoy004xiLDeL0Zx8=
+			eHlzrrA6Bmj9eKD7iB9SRtrHZt3Rw3N2lViTnZXVyI4=
 			</data>
 		</dict>
 		<key>Headers/RXIMSingleService.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oRGERg2IYhwbhheEDSMQlyAxbuA=
+			5ORlAif9b6UT4AWt2bUYofJQs9s=
 			</data>
 			<key>hash2</key>
 			<data>
-			dgEOeotBMUA4jYRbL2fw2mjHgSx99Rz6R+F9vHatIxg=
+			nptTN+EN6XKvoHbalHBXUcJ0HcA6+WoFmyACe/phrJw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
