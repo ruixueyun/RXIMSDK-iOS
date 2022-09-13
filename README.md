@@ -1,2 +1,2 @@
 # RXIMSDK-iOS
-瑞雪IM SDK
+瑞雪IMSDK
