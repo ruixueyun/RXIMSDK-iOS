@@ -24,18 +24,14 @@ NS_ASSUME_NONNULL_BEGIN
  * @param cpId 产品cpid
  * @param clientType 客户端类型
  * @param baseUrl 服务器域名
- * @param ossUrl oss域名
- * @param ossEndpoint oss endpoint
- * @param ossBucketName oss bucketName
+ * @param version sdk版本号
  */
 - (void)initWithProductId:(NSString * _Nonnull)productId
                 channelId:(NSString * _Nonnull)channelId
                      cpid:(NSInteger)cpId
                clientType:(NSInteger)clientType
-                  baseUrl:(NSString * _Nonnull)baseUrl
-                   ossUrl:(NSString * _Nullable)ossUrl
-              ossEndpoint:(NSString * _Nullable)ossEndpoint
-            ossBucketName:(NSString * _Nullable)ossBucketName;
+                  version:(NSString * _Nonnull)version
+                  baseUrl:(NSString * _Nonnull)baseUrl;
 
 /**
  * 登陆IM
