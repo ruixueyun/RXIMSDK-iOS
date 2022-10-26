@@ -146,7 +146,7 @@ typedef enum : NSUInteger {
 @property (nonatomic, assign) NSInteger unreadCount;
 
 /** 阅后即焚的超时时间，单位毫秒 */
-@property (nonatomic, assign) NSInteger snapchat;
+@property (nonatomic, assign) NSInteger snapchatTimeout;
 
 @end
 
