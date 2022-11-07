@@ -39,8 +39,10 @@ typedef enum : NSUInteger {
     RXIMMessageType_read = 201,
     /** 撤回 */
     RXIMMessageType_recall = 202,
-    /** 删除 */
+    /** 阅后即焚 */
     RXIMMessageType_snapchat = 203,
+    /** 消息删除 */
+    RXIMMessageType_delete = 204,
 } RXIMMessageType;
 
 /** 会话类型 */

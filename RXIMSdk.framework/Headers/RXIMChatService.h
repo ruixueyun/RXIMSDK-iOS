@@ -100,6 +100,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)fetchHistoryMessages:(NSString * _Nullable)msgId
                             target:(NSString * _Nonnull)target
                              limit:(NSInteger)limit;
+
+
 /** 本地数据库操作 */
 /**
  * 获取本地历史消息
@@ -126,6 +128,8 @@ NS_ASSUME_NONNULL_BEGIN
  * @param msgId 消息id
  */
 - (BOOL)setAudioMessagePlayed:(NSString *)msgId;
+
+
 
 
 @end

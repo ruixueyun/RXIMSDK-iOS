@@ -9,6 +9,7 @@
 #import "RXIMSession.h"
 #import "RXIMError.h"
 #import "RXIMJoinSession.h"
+#import "RXIMMsgConvTipsContent.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -94,6 +95,15 @@ NS_ASSUME_NONNULL_BEGIN
          completionHandler:(void (^)(RXIMError *error))completionHandler;
 
 /**
+ * 离开会话（带tips）
+ * @param covIds 会话id数组
+ * @param tips 会话内提示内容
+ */
+- (void)leaveConversations:(NSArray * _Nonnull)covIds
+                      tips:(RXIMMsgConvTipsContent * _Nullable)tips
+         completionHandler:(void (^)(RXIMError *error))completionHandler;
+
+/**
  * 更新用户在会话中信息
  * @param covId 会话id
  * @param option 选项
@@ -109,6 +119,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)fetchConversationList:(void (^)(NSArray<RXIMSession *> *sessionInfoAry,RXIMError *error))completionHandler;
 
+/**
+ * 删除服务器消息
+ * @param msgIds 消息数组
+ * @param covId 会话id
+ */
+- (void)deleteServerMessages:(NSArray * _Nonnull)msgIds
+                       covId:(NSString *)covId
+           completionHandler:(void (^)(RXIMError *error))completionHandler;
+
 /** 本地数据库操作 */
 /**
  * 获取本地所有会话列表
@@ -121,7 +140,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (RXIMSession *)getConversationWithCovId:(NSString * _Nonnull)covId;
 
-
 /**
  * 获取会话最后一条消息
  * @param covId 会话id
@@ -129,11 +147,29 @@ NS_ASSUME_NONNULL_BEGIN
 -(RXIMMessage *)getLatestMessage:(NSString * _Nonnull)covId;
 
 /**
+ * 删除本地单个会话
+ * @param covId 会话id
+*/
+- (BOOL)deleteLocalConversation:(NSString * _Nonnull)covId;
+
+/**
+ * 删除本地消息
+ * @param msgIds 消息数组
+ */
+- (BOOL)deleteLocalMessages:(NSArray * _Nonnull)msgIds
+                      covId:(NSString *)covId;
+
+/**
  * 清空会话的未读消息数
  * @param covId 会话id
  */
-- (void)clearUnReadCount:(NSString * _Nonnull)covId
-             complete:(void(^)(RXIMError *error))complete;
+- (BOOL)clearUnReadCount:(NSString * _Nonnull)covId;
+
+/**
+ * 清空本地聊天记录
+ * @param covId 会话id
+ */
+- (BOOL)clearLocalMessages:(NSString * _Nonnull)covId;
 
 
 
