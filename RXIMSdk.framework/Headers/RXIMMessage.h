@@ -135,6 +135,9 @@ typedef enum : NSUInteger {
 /** 扩展信息 */
 @property(nonatomic, copy) NSDictionary<NSString *,NSString *> *ext;
 
+/** ims扩展信息 */
+@property(nonatomic, copy) NSDictionary<NSString *,NSString *> *imsExt;
+
 /** 消息内容 */
 @property (nonatomic, strong) id content;
 
