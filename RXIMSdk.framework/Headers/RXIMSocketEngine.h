@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 断开连接
  */
-- (void)onSocketDisconnect:(NSError *)error;
+- (void)onSocketDisconnect:(NSError * _Nullable)error;
 
 @end
 

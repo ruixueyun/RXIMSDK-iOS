@@ -30,6 +30,15 @@ NS_ASSUME_NONNULL_BEGIN
  * 服务端历史消息回执
  */
 - (void)historyMessage:(RXIMHistoryMsgResp *)msgObj;
+/**
+ * 服务器消息删除回执
+ */
+- (void)onServerMessageDelete:(RXIMMessage *)msgObj;
+
+/**
+ * 同步消息完成
+ */
+- (void)syncMessageFinished;
 
 @end
 

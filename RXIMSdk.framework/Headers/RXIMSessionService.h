@@ -18,15 +18,21 @@ NS_ASSUME_NONNULL_BEGIN
 @optional
 /**
  * 会话最后一条消息变更
- * @param sessions 全量的会话结构
+ * @param sessions 会话数组
  */
 - (void)onSessionLastMessageChanged:(NSArray<RXIMSession *> *)sessions;
 
 /**
  * 会话未读消息数变更
- * @param sessions 全量的会话结构
+ * @param sessions 会话数组
  */
 - (void)onSessionUnreadCountChanged:(NSArray<RXIMSession *> *)sessions;
+
+/**
+ * 服务器会话删除回执
+ * @param session 会话
+ */
+- (void)onServerSessionDelete:(RXIMSession *)session;
 
 @end
 
@@ -87,12 +93,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)joinConversation:(RXIMJoinSession * _Nonnull)joinSession
         completionHandler:(void (^)(RXIMError *error))completionHandler;
 
+#pragma mark -【可弃用】
 /**
  * 离开会话
  * @param covIds 会话id数组
  */
 - (void)leaveConversations:(NSArray * _Nonnull)covIds
-         completionHandler:(void (^)(RXIMError *error))completionHandler;
+         completionHandler:(void (^)(RXIMError *error))completionHandler DEPRECATED_MSG_ATTRIBUTE("use leaveConversations:tips:completionHandler: instead");
 
 /**
  * 离开会话（带tips）
@@ -121,7 +128,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  * 删除服务器消息
- * @param msgIds 消息数组
+ * @param msgIds 消息数组（单次最多20条）
  * @param covId 会话id
  */
 - (void)deleteServerMessages:(NSArray * _Nonnull)msgIds
