@@ -56,6 +56,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)setDBBasePath:(NSString * _Nullable)path;
 
+/**
+ * 获取设备码
+ */
+- (NSString *)getDeviceCode;
+
 @end
 
 NS_ASSUME_NONNULL_END

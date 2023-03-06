@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** 消息类型 */
 @property(nonatomic, assign) RXIMMessageType msgType;
 
-/** 子消息类型 type == RXIMMessageType_Custom 有效 设置需大于100，100以下供sdk内部使用 */
+/** 子消息类型 type == RXIMMessageType_Custom 有效 设置需小于100000000，100000000以上供sdk内部使用 */
 @property(nonatomic, assign) NSInteger subType;
 
 /** 消息选项 位运算 RXIMMsgOption组合 */
