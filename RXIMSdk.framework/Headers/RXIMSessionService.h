@@ -65,30 +65,11 @@ NS_ASSUME_NONNULL_BEGIN
 * @param ext 扩展字段
 */
 - (void)creatConversation:(NSString * _Nonnull)covId
-                   option:(NSInteger)option
-            creatorOption:(NSInteger)creatorOption
-                  members:(NSArray * _Nullable)members
-                      ext:(NSDictionary<NSString *,NSString *> * _Nullable)ext
-        completionHandler:(void (^)(RXIMError *error))completionHandler;
-
-/**
-* 创建会话
-* @param covId 会话id
-* @param option 选项
-* @param creatorOption 创建者选项
-* @param members 成员
-* @param groupName 群名
-* @param groupDesc 群描述
-* @param ext 扩展字段
-*/
-- (void)creatConversation:(NSString * _Nonnull)covId
-                   option:(NSInteger)option
-            creatorOption:(NSInteger)creatorOption
-                  members:(NSArray * _Nullable)members
-                groupName:(NSString * _Nullable)groupName
-                groupDesc:(NSString * _Nullable)groupDesc
-                      ext:(NSDictionary<NSString *,NSString *> * _Nullable)ext
-        completionHandler:(void (^)(RXIMError *error))completionHandler;
+                          option:(NSInteger)option
+                   creatorOption:(NSInteger)creatorOption
+                         members:(NSArray * _Nullable)members
+                            ext:(NSDictionary<NSString *,NSString *> * _Nullable)ext
+               completionHandler:(void (^)(RXIMError *error))completionHandler;
 
 /**
  * 获取服务器会话列表

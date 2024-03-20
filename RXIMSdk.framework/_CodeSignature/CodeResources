@@ -4,10 +4,6 @@
 <dict>
 	<key>files</key>
 	<dict>
-		<key>Headers/NSObject+RXUAddition.h</key>
-		<data>
-		XzdZElG6ydXuXI1+qsty6ZjLOGk=
-		</data>
 		<key>Headers/RXIMChatService.h</key>
 		<data>
 		tXHi9acmqCxr4waSv/gmJpEKFQg=
@@ -50,7 +46,7 @@
 		</data>
 		<key>Headers/RXIMMsgFaceContent.h</key>
 		<data>
-		UxSceHLsOhKvVuXaDgNgwYb1LKA=
+		4t4C1jvhnMHcEwg01+lrsj4gZV0=
 		</data>
 		<key>Headers/RXIMMsgFileContent.h</key>
 		<data>
@@ -94,7 +90,7 @@
 		</data>
 		<key>Headers/RXIMSessionService.h</key>
 		<data>
-		Yr+PL9JSsPvGzXG+QEUQP32RIwk=
+		lPl8xzdXA1USeFkGoj5SDuwnyqA=
 		</data>
 		<key>Headers/RXIMSocketEngine.h</key>
 		<data>
@@ -102,26 +98,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		lxl4MDQgpKyAfnMDBqNlgC/HBno=
+		vEVkAswkm4LWcR8mOo7Gaxw7Cms=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		zzugadVaLWdkbbMxas/NnRR3JtE=
-		</data>
-		<key>PrivacyInfo.xcprivacy</key>
-		<data>
-		Sci0bIElAK3LaCDaso9rUTaPz4M=
+		NZ2511aNUNoo02A327tmIIUBV9c=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/NSObject+RXUAddition.h</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			tQugCARzdqyPC3HQmHI8uxAvlzDnKgxKyY1og9uA3ug=
-			</data>
-		</dict>
 		<key>Headers/RXIMChatService.h</key>
 		<dict>
 			<key>hash2</key>
@@ -196,7 +181,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XcDnBzaPbyo2mKS+5vudXgLDcx86+wukcvvy11OTA9Q=
+			9cyATM2tJQaxk0bJLmOg8CqokfHheSc3E/wllUmI6vo=
 			</data>
 		</dict>
 		<key>Headers/RXIMMsgFileContent.h</key>
@@ -273,7 +258,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			aPMpDMLdNq4ynv2BzIsEEoClx5S/rrhf79rR6RsjFXA=
+			HywtXLFB9vJOUIcEOuftcHECLiPnsw9z6rSzSrfagW8=
 			</data>
 		</dict>
 		<key>Headers/RXIMSocketEngine.h</key>
@@ -287,14 +272,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			61t+RW906/naxK+djppSrLKfY5YuA5rl1C8e+LHfJ3E=
-			</data>
-		</dict>
-		<key>PrivacyInfo.xcprivacy</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			+Vg1rVdJYcPVaEmiQC8s2Lov4bv33r+S1hTLORsU2yM=
+			tPRKm0ZceISXDLORPEHJ9jk3bzMIRIAZx1XlQ9Wi4JQ=
 			</data>
 		</dict>
 	</dict>

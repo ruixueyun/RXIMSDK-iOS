@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RXIMSDK-iOS'
-  s.version          = '1.1.11'
+  s.version          = '1.2.0'
   s.summary          = 'ruixue main framework.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/ruixueyun/RXIMSDK-iOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '11.0'
+  s.ios.deployment_target = '6.0'
 
 #  s.source_files = 'RXSDK/*'
    s.source_files = '*.framework/Headers/*.{h,m,plist}'
@@ -45,7 +45,7 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'AdSupport', 'iAd', 'Foundation', 'UIKit'
   # s.libraries = 'sqlite3', 'c++', 'c++abi', 'z'
 #
-  s.platform = :ios, '11.0'
+  s.platform = :ios, '9.0'
 #  s.dependency 'WechatOpenSDK'
 #  s.dependency 'AFNetworking'
 #  s.dependency 'YYModel'
