@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RXIMError.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * 断开连接
  */
-- (void)onSocketDisconnect:(NSError * _Nullable)error;
+- (void)onSocketDisconnect:(RXIMError * _Nullable)error;
 
 @end
 

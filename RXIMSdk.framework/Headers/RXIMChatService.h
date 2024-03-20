@@ -34,11 +34,20 @@ NS_ASSUME_NONNULL_BEGIN
  * 服务器消息删除回执
  */
 - (void)onServerMessageDelete:(RXIMMessage *)msgObj;
-
 /**
  * 同步消息完成
  */
 - (void)syncMessageFinished;
+
+/**
+ * 引用消息的原消息被撤回回执
+ */
+- (void)onReplyOriginMessageRecalled:(NSArray<RXIMMessage *> *)msgs;
+
+/**
+ * 文件上传进度
+ */
+- (void)fileUploadCallback:(RXIMMessage *)msgObj byteSent:(int64_t)bytesSent totalBytesSent:(int64_t)totalBytesSent totalBytesExpectedToSend:(int64_t)totalBytesExpectedToSend;
 
 @end
 
@@ -47,7 +56,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id <RXIMMessageDelegate> delegate;
 
 /**
- * 获取SDK实例（单例）
+ * 获取聊天SDK实例（单例）
  */
 + (instancetype)sharedSDK;
 
@@ -78,12 +87,18 @@ NS_ASSUME_NONNULL_BEGIN
  * 转发消息
  * @param mids 消息id数组
  * @param receives 会话id数组
+ * @param type 转发类型 1：单条转发 2：逐条转发 3：合并转发
+ * @param note 留言
  * @Param exts 扩展数组
+ * @param option 消息选项
  * @param completionHandler 返回消息对象，处理本地逻辑用，发送成功以delegate方式回调。
  */
 - (void)forwardMessage:(NSArray * _Nonnull)mids
               receives:(NSArray * _Nonnull)receives
-                   ext:(NSArray *)exts
+                  type:(NSInteger)type
+                  note:(NSString * _Nullable)note
+                   ext:(NSArray * _Nullable)exts
+                option:(NSInteger)option
      completionHandler:(void (^)(NSArray<RXIMMessage *> *messages,RXIMError *error))completionHandler;
 
 /**
@@ -110,6 +125,18 @@ NS_ASSUME_NONNULL_BEGIN
                             target:(NSString * _Nonnull)target
                              limit:(NSInteger)limit;
 
+/**
+ * 更新服务器消息扩展字段
+ * @param msgIds 消息id数组（单次最多20条）
+ * @param target 会话id
+ * @param ext 扩展字段
+ * @param completionHandler  更新结果（成功/失败）。
+ */
+- (void)updateServerMessageExt:(NSArray * _Nonnull)msgIds
+                        target:(NSString * _Nonnull)target
+                           ext:(NSDictionary<NSString *,NSString *> * _Nonnull)ext
+             completionHandler:(void (^)(RXIMError *error))completionHandler;
+                        
 
 /** 本地数据库操作 */
 /**
@@ -133,13 +160,20 @@ NS_ASSUME_NONNULL_BEGIN
 -(RXIMMessage *)getMessageWithMsgId:(NSString * _Nonnull)msgId;
 
 /**
+ * 更新本地消息扩展字段
+ * @param msgIds 消息id数组
+ * @param ext 扩展字段
+ * @return 更新是否成功
+ */
+- (BOOL)updateLocalMessageExt:(NSArray * _Nonnull)msgIds
+                     ext:(NSDictionary<NSString *,NSString *> * _Nonnull)ext;
+
+/**
  * 设置语音消息已播放
  * @param msgId 消息id
+ * @return 设置是否成功
  */
 - (BOOL)setAudioMessagePlayed:(NSString *)msgId;
-
-
-
 
 @end
 

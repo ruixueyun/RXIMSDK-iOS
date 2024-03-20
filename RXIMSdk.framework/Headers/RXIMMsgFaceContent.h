@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *face_file_type;
 /** 表情文件大小，单位：byte */
 @property (nonatomic, assign) NSInteger size;
+
 @end
 
 NS_ASSUME_NONNULL_END

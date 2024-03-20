@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** 会话属性，位运算 */
 @property (nonatomic,assign) NSInteger attr;
 
-/** 会话选项，位运算 */
+/** 会话选项，RXIMMsgOption 位运算组合 */
 @property (nonatomic,assign) NSInteger option;
 
 /** 会话创建毫秒时间戳 */
@@ -55,7 +55,7 @@ NS_ASSUME_NONNULL_BEGIN
 /** 会话属性，位运算 */
 @property (nonatomic,assign) NSInteger userAttr;
 
-/** 会话选项，位运算 */
+/** 用户会话选项，RXIMMsgOption 位运算组合 */
 @property (nonatomic,assign) NSInteger userOption;
 
 /** 用户cp扩展字段 */
@@ -63,6 +63,34 @@ NS_ASSUME_NONNULL_BEGIN
 
 /** 未读消息数 */
 @property (nonatomic, assign) NSInteger unreadCount;
+
+/** 阅后即焚超时时间，单位毫秒 */
+@property (nonatomic, assign) NSInteger snapchatTimeout;
+
+/** ###### 以下为扩展业务（暂不支持）###### */
+/** 会话置顶时间戳，单位毫秒 */
+@property (nonatomic, assign) NSInteger topTimestamp;
+
+/** 是否免打扰 */
+@property (nonatomic, assign) BOOL silent;
+
+/** 是否标记 */
+@property (nonatomic, assign) BOOL isMark;
+
+/** 是否归档 */
+@property (nonatomic, assign) BOOL isArchive;
+
+/** 消息置顶的消息id */
+@property (nonatomic, strong) NSString *topMsg;
+
+/** 由谁置顶的消息 */
+@property (nonatomic, strong) NSString *topMsgUser;
+
+/** 群名称 */
+@property (nonatomic, strong) NSString *groupName;
+
+/** 群描述 */
+@property (nonatomic, strong) NSString *groupDesc;
 
 @end
 

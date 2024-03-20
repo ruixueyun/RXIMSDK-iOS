@@ -4,9 +4,13 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/NSObject+RXUAddition.h</key>
+		<data>
+		XzdZElG6ydXuXI1+qsty6ZjLOGk=
+		</data>
 		<key>Headers/RXIMChatService.h</key>
 		<data>
-		HvSrsa3idoHryb48hycts2xHcx4=
+		tXHi9acmqCxr4waSv/gmJpEKFQg=
 		</data>
 		<key>Headers/RXIMDownload.h</key>
 		<data>
@@ -26,11 +30,15 @@
 		</data>
 		<key>Headers/RXIMMessage.h</key>
 		<data>
-		7B9546BOhoxV0l7tKu0iIrtU/UU=
+		ogdai8eQGj9HwQ0mLeXmM+cHeF0=
 		</data>
 		<key>Headers/RXIMMsgAudioContent.h</key>
 		<data>
 		yKPuz4wMtbwTYXAYd9hRd8t77zU=
+		</data>
+		<key>Headers/RXIMMsgCombineTransmitContent.h</key>
+		<data>
+		4uCPvloZfT28UBg0FAlO2n8a8Cs=
 		</data>
 		<key>Headers/RXIMMsgConvTipsContent.h</key>
 		<data>
@@ -42,7 +50,7 @@
 		</data>
 		<key>Headers/RXIMMsgFaceContent.h</key>
 		<data>
-		4t4C1jvhnMHcEwg01+lrsj4gZV0=
+		UxSceHLsOhKvVuXaDgNgwYb1LKA=
 		</data>
 		<key>Headers/RXIMMsgFileContent.h</key>
 		<data>
@@ -58,7 +66,7 @@
 		</data>
 		<key>Headers/RXIMMsgReplyContent.h</key>
 		<data>
-		CYHZz3RQrSCO7B8ScorWY4s5mic=
+		z6HBGuvAvd7uC8GoQH19PF7maRU=
 		</data>
 		<key>Headers/RXIMMsgTextContent.h</key>
 		<data>
@@ -70,60 +78,59 @@
 		</data>
 		<key>Headers/RXIMSDKManager.h</key>
 		<data>
-		tj161eN3/zSj/eoPRk/nl5dalpI=
+		Vd0sjPt9k99nDpa9oaeRTir5MmM=
 		</data>
 		<key>Headers/RXIMSdk.h</key>
 		<data>
-		wXAA/y5nvzpuYPpMbngeB+1J3/U=
-		</data>
-		<key>Headers/RXIMSearch.h</key>
-		<data>
-		ECXcV8m4GZ4Kpi0ASS+wG3137vA=
+		bZj9CttI2UKGZGzIUKVaB/zkGdE=
 		</data>
 		<key>Headers/RXIMSendMessage.h</key>
 		<data>
-		O/txYU4hxcfxyza10Pa613/3HFM=
+		CMpxts31ccBw8CCacaYkq4pxzrE=
 		</data>
 		<key>Headers/RXIMSession.h</key>
 		<data>
-		TL7EUyS61iHZ7qHPZCjA/2g3CoQ=
+		4jzNyyZSR0wJZ/hk2ER5NvUQBhw=
 		</data>
 		<key>Headers/RXIMSessionService.h</key>
 		<data>
-		qSuPQ0PtK099uR3UGLZhfSJj554=
+		Yr+PL9JSsPvGzXG+QEUQP32RIwk=
 		</data>
 		<key>Headers/RXIMSocketEngine.h</key>
 		<data>
-		QwPnOPAo8A/i7LsHzht3idVeYe8=
+		1SXaphJA7rSxyOsmlWqsjW6t5sY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vEVkAswkm4LWcR8mOo7Gaxw7Cms=
+		lxl4MDQgpKyAfnMDBqNlgC/HBno=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		NZ2511aNUNoo02A327tmIIUBV9c=
+		zzugadVaLWdkbbMxas/NnRR3JtE=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		Sci0bIElAK3LaCDaso9rUTaPz4M=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
-		<key>Headers/RXIMChatService.h</key>
+		<key>Headers/NSObject+RXUAddition.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			HvSrsa3idoHryb48hycts2xHcx4=
-			</data>
 			<key>hash2</key>
 			<data>
-			HFkb18WX8JzM2raz+ZMxQii1H6InsXFjxFfqnxKQNO0=
+			tQugCARzdqyPC3HQmHI8uxAvlzDnKgxKyY1og9uA3ug=
+			</data>
+		</dict>
+		<key>Headers/RXIMChatService.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iJf4CQjAtD/zwEOwAnN3FxDMsImwOOqNeRMyE1i4EMY=
 			</data>
 		</dict>
 		<key>Headers/RXIMDownload.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Dy8DgX/sR8Rc+eDyh0hU2jbd1eg=
-			</data>
 			<key>hash2</key>
 			<data>
 			0I6l++HnD2mdBAGRepxplRca5184LnFM1t8eo8HigkE=
@@ -131,10 +138,6 @@
 		</dict>
 		<key>Headers/RXIMError.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			nqQHqSI7EqBZQgt9pLPwQaI8omw=
-			</data>
 			<key>hash2</key>
 			<data>
 			PzEv0lqRzSuPwEV1PdMNZx0pf94M9QZtyftuC3GprHc=
@@ -142,10 +145,6 @@
 		</dict>
 		<key>Headers/RXIMHistoryMsgResp.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XmV5bEOT4lE+e5YbWdTL3Z1QwuU=
-			</data>
 			<key>hash2</key>
 			<data>
 			1F8RP/Yuv0HDsm2OjsE32TBtbFVVPOPyNNtOsgh2+Pw=
@@ -153,10 +152,6 @@
 		</dict>
 		<key>Headers/RXIMJoinSession.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			8bFql9v1YUNqGPpX3NJ5Ul0JE0k=
-			</data>
 			<key>hash2</key>
 			<data>
 			0Qxy9+PHtxMOwWJztV+lqKf+iVGAGYoEjBT/nrE3Acg=
@@ -164,32 +159,27 @@
 		</dict>
 		<key>Headers/RXIMMessage.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			7B9546BOhoxV0l7tKu0iIrtU/UU=
-			</data>
 			<key>hash2</key>
 			<data>
-			b6+iiM/uDguoG9jqrVlJ3DBHVfF18AALNyvOvHNuR+I=
+			/qzn3Zgf6xptO6Lppl6Vv/K2ZaCqFTX5Oegc5RnZgfg=
 			</data>
 		</dict>
 		<key>Headers/RXIMMsgAudioContent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			yKPuz4wMtbwTYXAYd9hRd8t77zU=
-			</data>
 			<key>hash2</key>
 			<data>
 			thdhmXn9vEGiI/SliNvg0TXznijz2c+23DT2w5LZhog=
 			</data>
 		</dict>
+		<key>Headers/RXIMMsgCombineTransmitContent.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			SkzYGV7BJZB6Zg2lHYlMOwe5UdDawulOipkTndJrY50=
+			</data>
+		</dict>
 		<key>Headers/RXIMMsgConvTipsContent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			6UxzWaGspO8gtJV5cW3KN8ipJfo=
-			</data>
 			<key>hash2</key>
 			<data>
 			LLTXWcFg8AmoPElpzp4ExkkvsFzOd5+zGXy+HJGK9gs=
@@ -197,10 +187,6 @@
 		</dict>
 		<key>Headers/RXIMMsgCustomContent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			khwpDBPbnQ7OI3CQ3/LRYav30hQ=
-			</data>
 			<key>hash2</key>
 			<data>
 			FUg8OjWy5wBbCTaMWCkk9pX9ylceFCiSdeicRkhdtgQ=
@@ -208,21 +194,13 @@
 		</dict>
 		<key>Headers/RXIMMsgFaceContent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			4t4C1jvhnMHcEwg01+lrsj4gZV0=
-			</data>
 			<key>hash2</key>
 			<data>
-			9cyATM2tJQaxk0bJLmOg8CqokfHheSc3E/wllUmI6vo=
+			XcDnBzaPbyo2mKS+5vudXgLDcx86+wukcvvy11OTA9Q=
 			</data>
 		</dict>
 		<key>Headers/RXIMMsgFileContent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			EaLJLX46n5XIhv1Vw4d01QgoFlM=
-			</data>
 			<key>hash2</key>
 			<data>
 			8QU/BVeEgX3JyIZBzKQoK1+hh1jCCy5jox14P2jSRd4=
@@ -230,10 +208,6 @@
 		</dict>
 		<key>Headers/RXIMMsgImageContent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			JJedr7UnRwcDUtS0sGTYp3EHnLM=
-			</data>
 			<key>hash2</key>
 			<data>
 			PycMqUo7jUv1znhZO4UxQQQMk2mz0VqELm5SstNGUMI=
@@ -241,10 +215,6 @@
 		</dict>
 		<key>Headers/RXIMMsgLBSContent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			GcrW1XY1iAnGpfmaTyxIJs1sdB0=
-			</data>
 			<key>hash2</key>
 			<data>
 			52VT/W9kBhZzPe383/VzaI+Mbl0k4W2xKzPDiKcG6iU=
@@ -252,21 +222,13 @@
 		</dict>
 		<key>Headers/RXIMMsgReplyContent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			CYHZz3RQrSCO7B8ScorWY4s5mic=
-			</data>
 			<key>hash2</key>
 			<data>
-			6ABz1+jV9pvKogXhjtuaNe+JpCAvgD0tfKt4wfnD/rk=
+			QPUpjD/0JWkp1+Ot/Pv2Nfv+5y9yMg19YLEQiup1g/A=
 			</data>
 		</dict>
 		<key>Headers/RXIMMsgTextContent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			XZJMmBfcorDX0dGBORNKscrDrwY=
-			</data>
 			<key>hash2</key>
 			<data>
 			5CtEjgJG16VR6T3txdRtLo6MGN31lgAqjVsPyw/OiKI=
@@ -274,10 +236,6 @@
 		</dict>
 		<key>Headers/RXIMMsgVideoContent.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			ITAMd7MTJParXivZPcFzzTRlYo0=
-			</data>
 			<key>hash2</key>
 			<data>
 			4iyaXyR3J5G53Ol4AaPwsMeZwsckJMWC7ofGfiVV9HI=
@@ -285,90 +243,58 @@
 		</dict>
 		<key>Headers/RXIMSDKManager.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			tj161eN3/zSj/eoPRk/nl5dalpI=
-			</data>
 			<key>hash2</key>
 			<data>
-			XeLl1fKq2ssiXNgVoN/hWFnCc2UbimZGSD4WknvQp7g=
+			bidsk/5/Gc5Er/ubEmp58v0Z/Pgh5Snq1O8AHuz6Qsc=
 			</data>
 		</dict>
 		<key>Headers/RXIMSdk.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			wXAA/y5nvzpuYPpMbngeB+1J3/U=
-			</data>
 			<key>hash2</key>
 			<data>
-			DmkutSbzAk08bmZnNXkc1e9zle3QQV5mw/VO0DX40yg=
-			</data>
-		</dict>
-		<key>Headers/RXIMSearch.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ECXcV8m4GZ4Kpi0ASS+wG3137vA=
-			</data>
-			<key>hash2</key>
-			<data>
-			hUucun45Y9QcAI9Fcbrokw3dZgEmDGHtRspsPy4+sDI=
+			eaKcNg4K0Rx8CcTaeb6gVZRjKoHwn33Yx3fs/Gydt3A=
 			</data>
 		</dict>
 		<key>Headers/RXIMSendMessage.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			O/txYU4hxcfxyza10Pa613/3HFM=
-			</data>
 			<key>hash2</key>
 			<data>
-			Ecl4B6eIutoXHf47SUOEhQO0bghmTuqTro/OTH2Y+ek=
+			rDrRB3kDnvCg7I0X7BGSBcd0zHwFzdbJ4UXgaxF2EcI=
 			</data>
 		</dict>
 		<key>Headers/RXIMSession.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			TL7EUyS61iHZ7qHPZCjA/2g3CoQ=
-			</data>
 			<key>hash2</key>
 			<data>
-			Sw29V0rtNTvmhXmcg55i64N/acSdZu0rOb3GLDT8KJA=
+			p2qL6SV8dpYPezokt+oY2fmI4pnJDl9NtAvjh/4eacw=
 			</data>
 		</dict>
 		<key>Headers/RXIMSessionService.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			qSuPQ0PtK099uR3UGLZhfSJj554=
-			</data>
 			<key>hash2</key>
 			<data>
-			KC/hGpiUecGrcT1SWtOXh7z7xO18dmsC1zU2XUINp4U=
+			aPMpDMLdNq4ynv2BzIsEEoClx5S/rrhf79rR6RsjFXA=
 			</data>
 		</dict>
 		<key>Headers/RXIMSocketEngine.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			QwPnOPAo8A/i7LsHzht3idVeYe8=
-			</data>
 			<key>hash2</key>
 			<data>
-			8tm2KnuV+x54J+urrea4EFmP+6Ncfb9/Fq9v2EW8oy8=
+			LKIvWb9T/9YRAbCeIek2upZYnLfxc9u+AveV1gL5fEc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NZ2511aNUNoo02A327tmIIUBV9c=
-			</data>
 			<key>hash2</key>
 			<data>
-			tPRKm0ZceISXDLORPEHJ9jk3bzMIRIAZx1XlQ9Wi4JQ=
+			61t+RW906/naxK+djppSrLKfY5YuA5rl1C8e+LHfJ3E=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			+Vg1rVdJYcPVaEmiQC8s2Lov4bv33r+S1hTLORsU2yM=
 			</data>
 		</dict>
 	</dict>

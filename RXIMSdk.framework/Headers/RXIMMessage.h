@@ -33,6 +33,8 @@ typedef enum : NSUInteger {
     RXIMMessageType_Position = 8,
     /** 回复 */
     RXIMMessageType_Reply = 9,
+    /** 合并转发 */
+    RXIMMessageType_CombineTransmit = 10,
     /** 自定义 */
     RXIMMessageType_Custom = 101,
     /** 已读 */
@@ -119,7 +121,7 @@ typedef enum : NSUInteger {
 @property(nonatomic, copy) NSString *msgId;
 
 /** 消息发送者本地消息序号, 仅在客户端发送消息时有值 */
-@property(nonatomic, assign) NSInteger localId;
+@property(nonatomic, copy) NSString *localId;
 
 /** 当前用户同步序列号 */
 @property (nonatomic,assign) NSInteger inboxId;
@@ -133,9 +135,6 @@ typedef enum : NSUInteger {
 /** 扩展信息 */
 @property(nonatomic, copy) NSDictionary<NSString *,NSString *> *ext;
 
-/** ims扩展信息 */
-@property(nonatomic, copy) NSDictionary<NSString *,NSString *> *imsExt;
-
 /** 消息内容 */
 @property (nonatomic, strong) id content;
 
@@ -148,8 +147,25 @@ typedef enum : NSUInteger {
 /** 消息未读数 */
 @property (nonatomic, assign) NSInteger unreadCount;
 
+/** 已读用户数组 */
+@property (nonatomic, strong) NSArray *readIdArr;
+
 /** 阅后即焚的超时时间，单位毫秒 */
 @property (nonatomic, assign) NSInteger snapchatTimeout;
+
+
+/** ###### 以下为扩展业务（暂不支持）###### */
+/** 是否加急*/
+@property (nonatomic, assign) BOOL isUrgent;
+
+/** 加急的毫秒时间戳 */
+@property (nonatomic, assign) NSInteger urgentMillits;
+
+/** 加急的接收者数组 */
+@property (nonatomic, strong) NSArray * urgentToMembers;
+
+/** 是否标记 */
+@property (nonatomic, assign) BOOL isMark;
 
 @end
 

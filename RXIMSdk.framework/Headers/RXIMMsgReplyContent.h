@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) RXIMMessageType msgType;
 /** 引用消息子类型 */
 @property (nonatomic, assign) NSInteger subType;
+/** 是否为撤回消息 */
+@property (nonatomic, assign) BOOL isRecall;
 
 @end
 

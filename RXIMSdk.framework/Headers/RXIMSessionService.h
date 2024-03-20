@@ -13,7 +13,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-
 @protocol RXIMSessionServiceDelegate <NSObject>
 @optional
 /**
@@ -28,11 +27,22 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)onSessionUnreadCountChanged:(NSArray<RXIMSession *> *)sessions;
 
-/**
- * 服务器会话删除回执
+/** 会话扩展字段变更
  * @param session 会话
  */
-- (void)onServerSessionDelete:(RXIMSession *)session;
+- (void)onSessionInfoChanged:(RXIMSession *)session;
+
+/**
+ * 会话内成员变更回执（全量）
+ * @param session 会话
+ */
+- (void)onSesssionMembersChange:(RXIMSession *)session;
+
+/**
+ * 会话删除回执
+ * @param session 会话
+ */
+- (void)onSessionDelete:(RXIMSession *)session;
 
 @end
 
@@ -41,7 +51,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, weak) id <RXIMSessionServiceDelegate> delegate;
 
 /**
- * 获取SDK实例（单例）
+ * 获取会话SDK实例（单例）
  */
 + (instancetype)sharedSDK;
 
@@ -55,14 +65,38 @@ NS_ASSUME_NONNULL_BEGIN
 * @param ext 扩展字段
 */
 - (void)creatConversation:(NSString * _Nonnull)covId
-                          option:(NSInteger)option
-                   creatorOption:(NSInteger)creatorOption
-                         members:(NSArray * _Nullable)members
-                            ext:(NSDictionary<NSString *,NSString *> * _Nullable)ext
-               completionHandler:(void (^)(RXIMError *error))completionHandler;
+                   option:(NSInteger)option
+            creatorOption:(NSInteger)creatorOption
+                  members:(NSArray * _Nullable)members
+                      ext:(NSDictionary<NSString *,NSString *> * _Nullable)ext
+        completionHandler:(void (^)(RXIMError *error))completionHandler;
 
 /**
- * 更新会话数据
+* 创建会话
+* @param covId 会话id
+* @param option 选项
+* @param creatorOption 创建者选项
+* @param members 成员
+* @param groupName 群名
+* @param groupDesc 群描述
+* @param ext 扩展字段
+*/
+- (void)creatConversation:(NSString * _Nonnull)covId
+                   option:(NSInteger)option
+            creatorOption:(NSInteger)creatorOption
+                  members:(NSArray * _Nullable)members
+                groupName:(NSString * _Nullable)groupName
+                groupDesc:(NSString * _Nullable)groupDesc
+                      ext:(NSDictionary<NSString *,NSString *> * _Nullable)ext
+        completionHandler:(void (^)(RXIMError *error))completionHandler;
+
+/**
+ * 获取服务器会话列表
+ */
+- (void)fetchConversationList:(void (^)(NSArray<RXIMSession *> *sessionInfoAry,RXIMError *error))completionHandler;
+
+/**
+ * 更新会话扩展字段
  * @param covId 会话id
  * @param option 选项
  * @param ext 扩展字段
@@ -111,7 +145,7 @@ NS_ASSUME_NONNULL_BEGIN
          completionHandler:(void (^)(RXIMError *error))completionHandler;
 
 /**
- * 更新用户在会话中信息
+ * 更新用户在会话中扩展字段
  * @param covId 会话id
  * @param option 选项
  * @param ext 扩展字段
@@ -122,18 +156,14 @@ NS_ASSUME_NONNULL_BEGIN
                     completionHandler:(void (^)(RXIMError *error))completionHandler;
 
 /**
- * 获取服务器会话列表
- */
-- (void)fetchConversationList:(void (^)(NSArray<RXIMSession *> *sessionInfoAry,RXIMError *error))completionHandler;
-
-/**
- * 删除服务器消息
- * @param msgIds 消息数组（单次最多20条）
+ * 设置阅后即焚超时时间
+ * @param timeout 超时时间（毫秒） 0：取消阅后即焚 >0:阅后即焚超时时间
  * @param covId 会话id
  */
-- (void)deleteServerMessages:(NSArray * _Nonnull)msgIds
-                       covId:(NSString *)covId
-           completionHandler:(void (^)(RXIMError *error))completionHandler;
+- (void)setSnapchatTimeout:(NSInteger)timeout
+                        covId:(NSString *)covId
+            completionHandler:(void (^)(RXIMError *error))completionHandler;
+
 
 /** 本地数据库操作 */
 /**
@@ -145,7 +175,7 @@ NS_ASSUME_NONNULL_BEGIN
  * 根据会话id获取会话
  * @param covId 会话id
  */
-- (RXIMSession *)getConversationWithCovId:(NSString * _Nonnull)covId;
+- (RXIMSession *)getConversationInfo:(NSString * _Nonnull)covId;
 
 /**
  * 获取会话最后一条消息
@@ -177,8 +207,6 @@ NS_ASSUME_NONNULL_BEGIN
  * @param covId 会话id
  */
 - (BOOL)clearLocalMessages:(NSString * _Nonnull)covId;
-
-
 
 @end
 

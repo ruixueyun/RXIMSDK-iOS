@@ -32,7 +32,7 @@ FOUNDATION_EXPORT const unsigned char RXIMSdkVersionString[];
 #import <RXIMSdk/RXIMMsgLBSContent.h>
 #import <RXIMSdk/RXIMMsgCustomContent.h>
 #import <RXIMSdk/RXIMMsgReplyContent.h>
+#import <RXIMSdk/RXIMMsgCombineTransmitContent.h>
 #import <RXIMSdk/RXIMError.h>
-#import <RXIMSdk/RXIMSearch.h>
 #import <RXIMSdk/RXIMSocketEngine.h>
 
